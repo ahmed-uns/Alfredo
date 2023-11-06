@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Book a table</title>
+
+  <meta property="og:title" content="##############">
+  <meta property="og:type"  content="website">
+  <meta property="og:image" content="###########">
+  <meta property="og:url"   content="##################">
+  <meta property="og:description" content="#######################">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="################">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+ <header>
+  <video  autoplay muted loop>
+    <source src="./images/05a929ae19120d3f32994e2d0b770830_t4.mp4" type="video/mp4" >
+    
+  </video>
+  <h1>Alfredo</h1>
+ 
+</header>
+<form action="#" method="post">
+  <div>
+    <label for="name ">Your name</label>
+    <input type="text" name="name" required  id="name">
+  </div>
+  <div>
+    <label for="number">Number of people attending</label>
+    <input type="range" name="number" id="number" required value="2" min="1" max="10" oninput="updateValue(this.value)">
+    <output>2</output>
+  </div>
+  <div>
+    <label for="location">Location </label>
+    <input list="location" name="location" required id="locationlist">
+    <datalist id="location">
+      <option value="LA-bevirly hills">LA - Bevirly hills</option>
+      <option value="NY - Brooklyn">NY - Brooklyn</option>
+      <option value="NY - Queens">NY - Queens</option>
+      <option value="Texas - Dalis">Texas - Dalis</option>
+      <option value="meshigan - Ditroid">meshigan - Ditroid</option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+    </datalist>
+  </div>
+  <div>
+    <label for="date">Date</label>
+    <input type="datetime-local" required >
+  </div>
+  <input type="submit">Book a Table</button>
+</form>
+ <script src="./js/code.js"></script>
+</body>
+
+</html>
